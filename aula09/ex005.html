@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background: rgb(138, 123, 192);
+            color: white;
+            font: normal 1.2em Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div class="msg">Clique em mim</div>
+
+    <script>
+        /*
+            SELECIONANDO
+            Por Tag:
+                getElementsByTagName('x')[y] <- index
+            Por ID:
+                getElementById()
+            Por Nome:
+                getElementsByName()[y]
+            Por Classe:
+                getElementsByClassName()[y]
+            Por Seletor:
+                querySelector()
+                querySelectorAll()
+            
+            x.innerText -> pega o texto q está contido na tag x
+            x.innerHTML -> vem com a formatação do html
+        */
+
+        //var corpo = window.document.body
+
+        /*var d = document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'*/
+        //window.document.getElementById('msg').innerText = 'Olá'
+
+        /*var d = window.document.getElementsByName('msg')[0]
+        d.innerText = 'Olá!'*/
+
+        var d = window.document.querySelector('div.msg')
+        d.style.background = 'blue'
+
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write(`Está escrito assim: ${p1.innerText}.`)
+
+        //corpo.style.background = 'black'
+        //p1.style.color = 'blue'
+
+        //document.write(p1.innerHTML)
+    </script>
+</body>
+</html>

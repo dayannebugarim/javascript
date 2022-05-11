@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    Digite o seu país de origem: <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Enviar" onclick="nacionalidade()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function nacionalidade(){
+            var pais = document.getElementById('txtp')
+            pais = String(pais.value)
+            var res = document.getElementById('res')
+
+            res.innerHTML = `<p>Vivendo no país ${pais}.</p>`
+            if (pais == 'Brasil') {
+                res.innerHTML += '<p>Você é <strong>brasileiro</strong>!</p>'
+            }
+            else {
+                res.innerHTML += '<p>Você é <strong>estrangeiro</strong>!</p>'
+            }
+        }
+    </script>
+</body>
+</html>

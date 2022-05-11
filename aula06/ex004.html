@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 1.3em Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é seu nome?')
+
+        // document.write -> escreve algo no documento
+        // document.writeln -> quebra de linha
+        document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.<br/>`)
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}.<br/>`)
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}.`)
+
+        /*
+        
+        FORMATAÇÃO DE NÚMEROS
+        var n1 = 1545.5
+
+        n1.toFixed(2) -> determina a quantidade de casas decimais
+        //1545.50
+
+        n1.toFixed(2).replace('.' , ',') -> troca algo por outra coisa, como por exemplo o ponto para vírgula
+        //1545,50
+
+        n1.toLocaleString('pt-br' , {style: 'currency', currency: 'BRL'}) -> formata para um tipo de moeda
+        //R$ 1.545,50
+
+        n1.toLocaleString('pt-br' , {style: 'currency', currency: 'USD'})
+        //US$ 1.545,50
+        
+        */
+
+        //INCREMENTO ou DECREMENTO
+        // Pós:
+        // x++ ou x--
+
+        //Pré:
+        // ++x ou --x
+
+
+        // Igual: 5 == '5'? True -> vê apenas se possuem o mesmo valor
+        // Idêntico: 5 === '5'? False -> vê se possuem o mesmo valor e o mesmo tipo, se são idênticos
+        // Diferente: 5 != '5'? False
+        // Desigual restrito: 5 !== '5'? True
+
+        // !  -> negação (not)
+        // && -> conjunção (and)
+        // || -> disjunção (or)
+
+        // TERNÁRIO
+        // true ? (if true):(if false)
+        
+    </script>
+</body>
+</html>
